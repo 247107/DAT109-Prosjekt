@@ -85,57 +85,57 @@ public class Main {
         }
     }
 
-    public static boolean velgRegel(Spiller activeSpiller, int [] terninger) {
+    public static boolean velgRegel(Spiller aspiller, int [] terninger) {
         try {
-            System.out.println(Regler.sjanse(activeSpiller, terninger));
+            System.out.println(Regler.sjanse(aspiller, terninger));
             System.out.println("Velg hvilke regel");
             try {
                 int intChoice = Integer.parseInt(scanner.nextLine()) - 1;
                 switch (intChoice) {
                     case 0:
-                        activeSpiller.setResultat(intChoice, Regler.totalSum(terninger,1));
+                        aspiller.setResultat(intChoice, Regler.totalSum(terninger,1));
                         break;
                     case 1:
-                        activeSpiller.setResultat(intChoice, Regler.totalSum(terninger, 2));
+                        aspiller.setResultat(intChoice, Regler.totalSum(terninger, 2));
                         break;
                     case 2:
-                        activeSpiller.setResultat(intChoice, Regler.totalSum(terninger,3));
+                        aspiller.setResultat(intChoice, Regler.totalSum(terninger,3));
                         break;
                     case 3:
-                        activeSpiller.setResultat(intChoice, Regler.totalSum(terninger,4));
+                        aspiller.setResultat(intChoice, Regler.totalSum(terninger,4));
                         break;
                     case 4:
-                        activeSpiller.setResultat(intChoice, Regler.totalSum(terninger,5));
+                        aspiller.setResultat(intChoice, Regler.totalSum(terninger,5));
                         break;
                     case 5:
-                        activeSpiller.setResultat(intChoice, Regler.totalSum(terninger,6));
+                        aspiller.setResultat(intChoice, Regler.totalSum(terninger,6));
                         break;
                     case 6:
-                        activeSpiller.setResultat(intChoice, Regler.ettPar(terninger));
+                        aspiller.setResultat(intChoice, Regler.ettPar(terninger));
                         break;
                     case 7:
-                        activeSpiller.setResultat(intChoice, Regler.toPar(terninger));
+                        aspiller.setResultat(intChoice, Regler.toPar(terninger));
                         break;
                     case 8:
-                        activeSpiller.setResultat(intChoice, Regler.treLike(terninger));
+                        aspiller.setResultat(intChoice, Regler.treLike(terninger));
                         break;
                     case 9:
-                        activeSpiller.setResultat(intChoice, Regler.fireLike(terninger));
+                        aspiller.setResultat(intChoice, Regler.fireLike(terninger));
                         break;
                     case 10:
-                        activeSpiller.setResultat(intChoice, Regler.litenStraight(terninger));
+                        aspiller.setResultat(intChoice, Regler.litenStraight(terninger));
                         break;
                     case 11:
-                        activeSpiller.setResultat(intChoice, Regler.storStraight(terninger));
+                        aspiller.setResultat(intChoice, Regler.storStraight(terninger));
                         break;
                     case 12:
-                        activeSpiller.setResultat(intChoice, Regler.fullHus(terninger));
+                        aspiller.setResultat(intChoice, Regler.fullHus(terninger));
                         break;
                     case 13:
-                        activeSpiller.setResultat(intChoice, Regler.sjanse(terninger));
+                        aspiller.setResultat(intChoice, Regler.sjanse(terninger));
                         break;
                     case 14:
-                        activeSpiller.setResultat(intChoice, Regler.yatze(terninger));
+                        aspiller.setResultat(intChoice, Regler.yatze(terninger));
                         break;
                     default:
                         System.out.println("for høy regel");
